@@ -5,7 +5,7 @@ import React from 'react';
 import { useSession }  from "next-auth/react";
 
 
-const layout = () => {
+const layout = ({children}: {children: React.ReactNode}) => {
 
   const isLoading = useAppSelector(store => store.LoadingReducer);  
   const {data: session} = useSession();
@@ -15,8 +15,11 @@ const layout = () => {
   }
 
   return (
-    <div>
-      layout
+    <div className="flex">
+      {/*<Sidebar></Sidebar> */}
+      <div className="w-full h-full">
+        {/*<navbar /> */}
+      </div>
     </div>
   )
 };
