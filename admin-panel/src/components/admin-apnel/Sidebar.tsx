@@ -36,8 +36,12 @@ const menus = [
 const Sidebar = () => {
   return 
     <div className="bg-white w-[300px] min-h-screen p-4 shrink-0">
-        <div className="flex items-center gap-4"></div>
-    </div>
+        <div className="flex items-center gap-4">
+            <img className="size-12 rounded-lg" src="/logo.png" alt="logo" />
+        </div>
+
+        <ul></ul>
+    </div>;
   
 };
 
