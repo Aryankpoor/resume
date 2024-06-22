@@ -7,7 +7,7 @@ import { useSession }  from "next-auth/react";
 
 const layout = () => {
 
-  const isLoading = useAppSelector(store => store.LoadingReducer);
+  const isLoading = useAppSelector(store => store.LoadingReducer);  
   const {data: session} = useSession();
 
   if (!session?.user){
