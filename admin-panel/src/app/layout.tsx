@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import AuthProvider from "@/components/admin-apnel/AuthProvider";
 import App from "./app";
+import { Toaster } from "react-hot-toast";  
 
 const inter = Inter({ subsets: ["latin"] });
 
