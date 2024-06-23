@@ -3,6 +3,9 @@ import Navbar from './components/navbar/navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ShopCategory from './pages/ShopCategory';
 import Shop from './pages/Shop';
+import Product from './pages/Product';
+import Cart from './pages/Cart';
+import LoginSignup from './pages/LoginSignup';
 
 function App() {
   return (
@@ -16,7 +19,8 @@ function App() {
         <Route path='/kids' element={<ShopCategory category="kid"/>} />
         <Route path="/product" element={<Product/>} />
         <Route path=':productId' element={<Product/>} />
-        
+        <Route path='/cart' element={<Cart/>} />
+        <Route path='/login' element={<LoginSignup/>} />
        </Routes>
 
 </BrowserRouter>
