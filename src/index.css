@@ -52,3 +52,11 @@
   }
 }
 
+@Layer utilities {
+  .btn_white_rounded {
+    @apply medium-15 border-white bg-white px-7 py-3 text-gray-90 rounded-full
+  }
+  .btn_white_hover {
+    
+  }
+}
