@@ -5,7 +5,20 @@ import { BrowserRouter, Routes,Route } from 'react-router-dom';
 function App() {
   return (
     <div>
+      <BrowserRouter>
       <Navbar/>
+      <Routes>
+        <Route path="/" element={<Shop/>} />
+        <Route path="/mens" element={<Cart category="men"/>} />
+        <Route path="/womens" element={<Cart category="women"/>} />
+        <Route path="/kids" element={<Cart category="kid"/>} />
+        <Route path="/product" element={<Product/>}>
+        <Route path="/product" element={<Product/>} />
+        
+        </Route>
+      </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }
