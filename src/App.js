@@ -1,6 +1,10 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import Shop from './Pages/Shop';
+import Product from './Pages/Product';
+import Cart from './Pages/Cart';
+import ShopCategory from './Pages/ShopCategory';
 
 function App() {
   return (
@@ -13,7 +17,7 @@ function App() {
         <Route path="/womens" element={<Cart category="women"/>} />
         <Route path="/kids" element={<Cart category="kid"/>} />
         <Route path="/product" element={<Product/>}>
-        <Route path="/product" element={<Product/>} />
+        <Route path=':productId' element={<Product/>} />
         
         </Route>
       </Routes>
