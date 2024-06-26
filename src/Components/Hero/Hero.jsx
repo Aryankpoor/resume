@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from '../Components/Hero/Hero'
+import './Hero.css'
 
-const Shop = () => {
+
+const Hero = () => {
     return (
-        <div>
-            <Hero/>
+        <div className='hero'>
         </div>
     )
 }
 
-export default Shop
+export default Hero;
