@@ -23,3 +23,9 @@
     height: 600px;
 }
 
+.productdisplay-right {
+    margin: 0px 70px;
+    display: flex;
+    flex-direction: column;
+
+}
