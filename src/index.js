@@ -7,12 +7,12 @@ import ShopContextProvider, { ShopContext } from './Components/Context/ShopConte
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+
     <ShopContextProvider>
     <App />
     </ShopContextProvider>
     
-  </React.StrictMode>
+ 
 );
 
 reportWebVitals();
