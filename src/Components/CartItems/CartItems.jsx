@@ -21,10 +21,10 @@ const CartItems = () => {
         <div className="cartitems-format cartitems-format-main">
             <img src={e.image} className='carticon-product-icon' alt="" />
             <p>{e.name}</p>
-            <p>${e.new_price}</p>
+            <p>₹{e.new_price}</p>
             <button className='cartitems-quantity'>{cartItems[e.id]}</button>
-            <p>{e.new_price*cartItems[e.id]}</p>
-            <img src={remove_icon} alt="" onClick={()=>{removeFromCart(e.id)}}/>
+            <p>₹{e.new_price*cartItems[e.id]}</p>
+            <img className="cartitems-remove-icon" src={remove_icon} alt="" onClick={()=>{removeFromCart(e.id)}}/>
         </div>
         <hr />
       </div>
