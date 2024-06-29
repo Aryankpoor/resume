@@ -5,13 +5,14 @@ import { createContext } from "react";
 export const ShopContext = createContext(null);
 
 const getDefaultCart = ()=>{
-    let cart = {};
+    let cart = [];
     for (let index = 0; index < all_product.length+1; index++) {
         cart[index] = 0;
     }
     return cart;
 }
-const ShopContextProvider = (props) => {
+
+export default function ShopContextProvider(props){
     const [cartItems,setCartItems] = useState(getDefaultCart());
 
     const addToCart = (itemId) =>{
@@ -33,8 +34,8 @@ const ShopContextProvider = (props) => {
                     let itemInfo = all_product.find((product)=>product.id===Number(item))
                     totalAmount += itemInfo.new_price * cartItems[item];
                 }
-                return totalAmount;
         }
+        return totalAmount;
      }
 
      const contextValue = {getTotalCartAmount,all_product,cartItems,addToCart,removeFromCart};
@@ -44,5 +45,3 @@ const ShopContextProvider = (props) => {
         </ShopContext.Provider>
     )
 }
-
-export default ShopContextProvider;
