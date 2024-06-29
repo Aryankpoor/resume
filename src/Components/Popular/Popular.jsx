@@ -14,6 +14,7 @@ const Popular = () => {
      })}
       </div>
     </div>
+  
   )
 }
 
