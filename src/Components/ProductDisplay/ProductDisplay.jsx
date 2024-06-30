@@ -34,7 +34,7 @@ const ProductDisplay = (props) => {
             <div className="productdisplay-right-price-old">${product.old_price}</div>
             <div className="productdisplay-right-price-new">${product.new_price}</div>
         </div>
-        <div className="productdsiplay-right-description">
+        <div className="productdisplay-right-description">
         Elevate your style game with our range of comfortable and versatile t-shirts. Crafted from high-quality 
         100% cotton, these t-shirts are designed to make you stand out on any occasion. 
          This regular fit t-shirt features a solid pattern and is available in a half sleeve design, making it
