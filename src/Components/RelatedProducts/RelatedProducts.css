@@ -26,19 +26,19 @@
 }
 
 @media(max-width:1280px){
-    .popular {
+    .relatedproducts{
         height: 70vh;
     }
-    .popular h1{
+    .relatedproducts h1{
         font-size: 40px;
     }
     
-    .popular hr{
+    .relatedproducts hr{
         width: 160px;
         height: 4px;
     }
     
-    .popular-item{
+    .relatedproducts-item{
         gap: 20px;
         margin-top: 30px;
     }
@@ -46,17 +46,17 @@
 }
 
 @media(max-width:1024px){
-    .popular {
+    .relatedproducts {
         height: 60vh;
     }
-    .popular h1{
+    .relatedproducts h1{
         font-size: 30px;
     }
-    .popular hr{
+    .relatedproducts hr{
         width: 120px;
         height: 3px;
     }
-    .popular-item{
+    .relatedproducts-item{
         gap: 15px;
         margin-top: 20px;
     }
@@ -64,17 +64,17 @@
 }
 
 @media(max-width:800px){
-    .popular {
+    .relatedproducts {
         height: 50vh;
         gap: 6px;
     }
-    .popular h1{
+    .relatedproducts h1{
         font-size: 20px;
     }
-    .popular hr{
+    .relatedproducts hr{
         width: 100px;
     }
-    .popular-item{
+    .relatedproducts-item{
         gap: 5px;
 
     }
@@ -82,10 +82,10 @@
 }
 
 @media(max-width:500px){
-    .popular{
+    .relatedproducts{
         height: 90vh;
     }
-    .popular-item{
+    .relatedproducts-item{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
