@@ -7,6 +7,7 @@ const multer = require('multer');
 const path = require('path');
 const cors = require('cors');
 const { error } = require('console');
+const { type } = require('os');
 
 // Connect cors to port  
 app.use(express.json());
@@ -26,7 +27,7 @@ app.get("/", (req,res)=>{
 const storage = multer.diskStorage({
     destination: './upload/images',
     filename:(req,file,cb)=>{
-        return cb(null, `${file.fieldname}_${Date.ow()}${path.extname(file.originalname)}`)
+        return cb(null, `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`)
     }
 })
 
@@ -42,6 +43,49 @@ app.post("/upload",upload.single('product'),(req,res)=>{
 })
 
 
+// Schema for Creating Products
+
+const Product = mongoose.model("Product",{
+    id:{
+        type:Number,
+        required:true,
+    },
+    name:{
+        type:String,
+        required:true,
+    },
+    image:{
+        type:String,
+        required:true,
+    },
+    category:{
+        type:String,
+        required:true,
+    }, 
+    new_price:{
+        type:Number,
+        required:true,
+    },
+    old_price:{
+        type:Number,
+        required:true,
+    },
+    date:{
+        type:Date,
+        default:Date.now,
+    },
+    available:{
+        type:Boolean,
+        default:true,
+    },
+    })
+
+
+app.post('/addproduct',async (req,res)=>{
+    const product = new Product({
+        id:req.body
+    })
+})
 
 app.listen(port,(error)=>{
     if (!error) {
