@@ -1,13 +1,23 @@
-
 {
   "homepage": "https://Aryankpoor.github.io/Secondhand",
+  "name": "secondhand",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+  },
   "devDependencies": {
-      "gh-pages": "^6.1.1"
-    },
-  "scripts":{
+    "gh-pages": "^6.1.1"
+  },
+  "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
-}   
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject" 
+  }
+
 }
-
-
