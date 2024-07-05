@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { createContext } from "react";
 
 export const ShopContext = createContext(null);
@@ -15,6 +15,12 @@ export default function ShopContextProvider(props){
 
     const [all_product,setAllProduct] = useState([]); 
     const [cartItems,setCartItems] = useState(getDefaultCart());
+
+    useEffect(()=>{
+     fetch('http://localhost:4000/allproducts')
+     .then((response)=>response.json())
+     .then((data)=>setAllProduct(data))
+    },[])
 
     const addToCart = (itemId) =>{
        setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
