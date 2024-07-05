@@ -8,6 +8,7 @@ const path = require('path');
 const cors = require('cors');
 const { error } = require('console');
 const { type } = require('os');
+const { json } = require('express');
 
 // Connect cors to port  
 app.use(express.json());
@@ -152,6 +153,7 @@ const Users = mongoose.model('Users', {
 
 // creating endpoint for user registration
 app.post('/signup',async (req,res)=>{
+
     let check = await Users.findOne({email:req.body.email});
     if (check) {
         return res.status(400).json({success:false,errors:"Account already exists with this email"})
@@ -162,8 +164,31 @@ app.post('/signup',async (req,res)=>{
         
     }
     const user = new Users({
-        
+        name:req.body.username,
+        email:req.body.email,
+        password:req.body.password,
+        cartData:cart,
     })
+
+    await user.save();
+
+    const data = {
+        user:{
+            id:user.id
+        }
+    }
+
+    const token = jwt.sign(data,'secret_ecom');
+    res.json({success:true,token})
+})
+
+// Creating Endpoint for User Login
+
+app.post('/login',async(req,res)=>{
+    let user = await Users.findOne({email:req.body.email});
+    if (user) {
+        const passCompare = req.body.password === user.password;
+    }
 })
 
 app.listen(port,(error)=>{
