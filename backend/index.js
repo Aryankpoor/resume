@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 const multer = require('multer');
 const path = require('path');
 const cors = require('cors');
-const { error } = require('console');
+const { error, log } = require('console');
 const { type } = require('os');
 const { json } = require('express');
 
@@ -214,6 +214,27 @@ app.get('/newcollections',async (req,res)=>{
    let newcollection = products.slice(1).slice(-8);
    console.log("New Collections Fetched");
    res.send(newcollection);
+})
+
+// Creating endpoint for popular in women's section
+
+app.get('/popularinwomen',async (req,res)=>{
+   let products = await Product.find({category:"women"});
+   let popularinwomen = products.slice(0,4);
+   console.log("Popular in Women Collection fetched");
+   res.send(popularinwomen);
+})
+
+// Creating Middleware to Fetch user
+
+  const fetchUser = async (req,res,next)=> {
+    const token = req.header('auth-token');
+    
+  }
+
+// Creating Endpoint for adding products in cart data
+app.post('/addtocart',async (req,res)=>{
+    console.log(req.body);
 })
 
 app.listen(port,(error)=>{
