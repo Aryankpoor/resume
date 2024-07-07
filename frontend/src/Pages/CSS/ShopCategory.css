@@ -42,6 +42,12 @@
     font-weight: 500;
 }
 
+.shopcategory-loadmore a{
+    text-decoration: none;
+    color: #787878;
+
+}
+
 @media(max-width:1280px){
     .shopcategory-banner{
         margin: 20px auto;

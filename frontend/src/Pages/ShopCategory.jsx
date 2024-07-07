@@ -29,7 +29,8 @@ const ShopCategory = (props) => {
         })}
       </div>
       <div className="shopcategory-loadmore">
-        Explore more
+        <a href="https://github.com/Aryankpoor/secondhand/blob/master/instructions.md" target="_blank" alt="">Explore more</a>
+        
       </div>
     </div>
   )

@@ -13,12 +13,10 @@ const Footer = () => {
         <p>AESTHETIC</p>
       </div>
       <ul className="footer-links">
-      <li><a href="https://github.com/Aryankpoor" alt="github author link">Author</a></li>
-        <li><a href="https://github.com/Aryankpoor/secondhand" alt="github repo link">Github</a></li>
-        
-        <li><a href="https://github.com/Aryankpoor/secondhand" alt="More projects like this">Projects</a></li>
-        <li><a href="https://Aryankpoor.github.io" alt="aryan kapoor portfolio">Portfolio</a></li>
-        <li><a href="https://read.cv/aryankkap" alt="CV">About</a></li>
+        <li><a href="https://github.com/Aryankpoor/secondhand" alt="github repo link">Source Code</a></li>
+        <li><a href="https://github.com/Aryankpoor?tab=repositories" alt="More projects like this">More Projects like this</a></li>
+        <li><a href="https://Aryankpoor.github.io" alt="aryan kapoor portfolio">Author</a></li>
+        <li><a href="mailto:aryankap19@gmail.com" alt="CV">Collaborate</a></li>
         
       </ul>
       <div className="footer-social-icon">
@@ -26,7 +24,7 @@ const Footer = () => {
          <a href="https://instagram.com/aryankkap" alt="" target="_blank"><img src={instagram_icon} alt="" /></a>
          </div>
          <div className="footer-icons-container">
-            <a href="https://www.linkedin.com/in/aryan-kapoor-4b0894207/" alt="" target="_blank"><img src={pinterest_icon} alt="" /></a>
+            <a href="https://github.com/Aryankpoor" alt="" target="_blank"><img src={pinterest_icon} alt="" /></a>
          </div>
          <div className="footer-icons-container">
             <a href="https://scrapbook.hackclub.com/Aryankapoor" target="_blank"><img src={whatsapp_icon} alt="" /></a>
