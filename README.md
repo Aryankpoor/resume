@@ -5,11 +5,11 @@ Secondhand is a full stack ecommerce website boilerplate. It uses **MERN** stack
 
 ### FRONT-END
     1. React
-    2. TailwindCss
+    2. For Form I have used a couple websites to receive responses such as formbackend and
     3. React Modules including React-Router-dom and React-hot-toast
 
 ### BACK-END
-    1. Google Cloud Console
+    1. React Modules such as cursers , multer
     2. MongoDB
 
 ### APP INFORMATION
