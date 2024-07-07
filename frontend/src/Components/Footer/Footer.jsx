@@ -13,11 +13,13 @@ const Footer = () => {
         <p>AESTHETIC</p>
       </div>
       <ul className="footer-links">
-        <li>Company</li>
-        <li>Products</li>
-        <li>Offices</li>
-        <li>About</li>
-        <li>Contact</li>
+      <li><a href="https://github.com/Aryankpoor" alt="github author link">Author</a></li>
+        <li><a href="https://github.com/Aryankpoor/secondhand" alt="github repo link">Github</a></li>
+        
+        <li><a href="https://github.com/Aryankpoor/secondhand" alt="More projects like this">Projects</a></li>
+        <li><a href="https://Aryankpoor.github.io" alt="aryan kapoor portfolio">Portfolio</a></li>
+        <li><a href="https://read.cv/aryankkap" alt="CV">About</a></li>
+        
       </ul>
       <div className="footer-social-icon">
          <div className="footer-icons-container">
@@ -32,7 +34,7 @@ const Footer = () => {
       </div>
       <div className="footer-copyright">
         <hr />
-        <p>Copyright @ 2024 - All Rights Reserved</p>
+        <p>Copyright @ 2024 - All Rights Reserved. This is just a project, not a real website</p>
       </div>
     </div>
   )
