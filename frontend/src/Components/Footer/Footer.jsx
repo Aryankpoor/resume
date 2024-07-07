@@ -23,13 +23,13 @@ const Footer = () => {
       </ul>
       <div className="footer-social-icon">
          <div className="footer-icons-container">
-            <img src={instagram_icon} alt="" />
+         <a href="https://instagram.com/aryankkap" alt="" target="_blank"><img src={instagram_icon} alt="" /></a>
          </div>
          <div className="footer-icons-container">
-            <img src={pinterest_icon} alt="" />
+            <a href="https://www.linkedin.com/in/aryan-kapoor-4b0894207/" alt="" target="_blank"><img src={pinterest_icon} alt="" /></a>
          </div>
          <div className="footer-icons-container">
-            <img src={whatsapp_icon} alt="" />
+            <a href="https://scrapbook.hackclub.com/Aryankapoor" target="_blank"><img src={whatsapp_icon} alt="" /></a>
          </div>
       </div>
       <div className="footer-copyright">

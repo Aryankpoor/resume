@@ -35,13 +35,13 @@ const ProductDisplay = (props) => {
             <div className="productdisplay-right-price-new">${product.new_price}</div>
         </div>
         <div className="productdisplay-right-description">
-        Elevate your style game with our range of comfortable and versatile t-shirts. Crafted from high-quality 
-        100% cotton, these t-shirts are designed to make you stand out on any occasion. 
-         This regular fit t-shirt features a solid pattern and is available in a half sleeve design, making it
-          suitable for all seasons. The round neck adds a touch of classic style while providing maximum comfort.
-          Whether you're layering up or wearing it alone, this t-shirt is perfect for every day wear.We understand 
+        Elevate your style game with this awesome product from a reputed brand available at Aesthetic. Crafted from high-quality 
+        100% cotton, these clothes are designed to make you stand out on any occasion. 
+         This regular fit clothes features a solid pattern and is available in many sizes, making it
+          suitable for all people. The comfortable material adds a touch of classic style while providing maximum comfort.
+          Whether you're layering up or wearing it alone, this item is perfect for every day wear.We understand 
           the importance of everyday comfort .Don't compromise on quality or price when it comes to your wardrobe
-             staples. Our t-shirts offer great quality at an unbeatable price point. 
+             staples. These brands offer great quality at an unbeatable price point. 
         </div>
         <div className="productdisplay-right-size">
             <h1>Select Size</h1>
@@ -54,7 +54,7 @@ const ProductDisplay = (props) => {
             </div>
         </div>
         <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
-        <p className='productdisplay-right-category1'><span>Category :   </span>   UPPERWEAR</p>
+        <p className='productdisplay-right-category1'><span>Category :   </span>   CLOTHING</p>
         <br></br>
         <hr />
       </div>
