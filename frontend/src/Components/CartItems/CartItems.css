@@ -10,10 +10,10 @@
 
 .cartitems-format-main {
     display: grid;
-    grid-template-columns: 2.5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    gap: 70px;
-    padding: 20px 4px;
+    gap: 60px;
+    padding: 20px 2px;
     color: #454545;
     font-size: 18px;
     font-weight: 600;
@@ -30,7 +30,7 @@
 
 .cartitems-remove-icon {
     width: 15px;
-    margin: 0px 40px;
+    margin: 0px 0px;
     cursor: pointer;
 }
 

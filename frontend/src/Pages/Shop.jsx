@@ -7,7 +7,6 @@ import Newsletter from "../Components/Newsletter/Newsletter";
 import ShopContextProvider from "../Components/Context/ShopContext";
 
 const Shop = () => {
-  //wrap the components in the ShopContextProvider so that the context is available to all the components
     return (
         <ShopContextProvider>
             <div>
