@@ -18,7 +18,7 @@ const LoginSignup = () => {
     console.log("Login Function Executed",formData);
     console.log("Signup Function Executed",formData);
     let responseData;
-    await fetch('https://sec-backend-1.onrender.com/login',{
+    await fetch('https://sec-backend.vercel.app/login',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
@@ -39,7 +39,7 @@ const LoginSignup = () => {
   const signup = async () => {
     console.log("Signup Function Executed",formData);
     let responseData;
-    await fetch('https://sec-backend-1.onrender.com/signup',{
+    await fetch('https://sec-backend.vercel.app/signup',{
       method:'POST',
       headers:{
         Accept:'application/form-data',

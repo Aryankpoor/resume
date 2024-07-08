@@ -7,7 +7,7 @@ const NewCollections = () => {
   const [new_collection,setNew_collection] = useState([]);
 
   useEffect(()=> {
-    fetch('https://sec-backend-1.onrender.com/newcollections')
+    fetch('https://sec-backend.vercel.app/newcollections')
     .then((response)=>response.json())
     .then((data)=>setNew_collection(data));
   },[]) 

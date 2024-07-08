@@ -17,12 +17,12 @@ export default function ShopContextProvider(props){
     const [cartItems,setCartItems] = useState(getDefaultCart());
 
     useEffect(()=>{
-     fetch('https://sec-backend-1.onrender.com/addproducts')
+     fetch('https://sec-backend.vercel.app/addproducts')
      .then((response)=>response.json())
      .then((data)=>setAllProduct(data))
 
      if (localStorage.getItem('auth-token')){
-        fetch('https://sec-backend-1.onrender.com/getcart',{
+        fetch('https://sec-backend.vercel.app/getcart',{
             method:'POST',
             headers:{
                 Accept:'application/form-data',
@@ -38,7 +38,7 @@ export default function ShopContextProvider(props){
     const addToCart = (itemId) =>{
        setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
        if(localStorage.getItem('auth-token')){
-           fetch('https://sec-backend-1.onrender.com/addtocart',{
+           fetch('https://sec-backend.vercel.app/addtocart',{
            method:'POST',
            headers:{
             Accept:'application/form-data',
@@ -56,7 +56,7 @@ export default function ShopContextProvider(props){
     const removeFromCart = (itemId) =>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
         if(localStorage.getItem('auth-token')){
-            fetch('https://sec-backend-1.onrender.com/removefromcart',{
+            fetch('https://sec-backend.vercel.app/removefromcart',{
                 method:'POST',
                 headers:{
                  Accept:'application/form-data',
