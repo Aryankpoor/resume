@@ -18,7 +18,7 @@ const LoginSignup = () => {
     console.log("Login Function Executed",formData);
     console.log("Signup Function Executed",formData);
     let responseData;
-    await fetch('https://secondhand-backend-5b5z.onrender.com/login',{
+    await fetch('https://sec-backend-1.onrender.com/login',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
@@ -39,7 +39,7 @@ const LoginSignup = () => {
   const signup = async () => {
     console.log("Signup Function Executed",formData);
     let responseData;
-    await fetch('https://secondhand-backend-5b5z.onrender.com/signup',{
+    await fetch('https://sec-backend-1.onrender.com/signup',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
