@@ -36,15 +36,6 @@ const BookOverview = ({title,author,genre,rating,total_copies,available_copies,d
             </Button>
         </div>
 
-        <div className="relative flex flex-1 justify-center">
-            <div className='relative'>
-                <BookCover variant="wide" className="z-10" coverColor={color} coverImage={cover} />
-
-                <div className="absolute left-16 top-10 rotate-12 opactiy-40 max-sm:hidden">
-                    <BookCover variant="wide" coverColor={color} coverImage={cover} />
-                </div>
-            </div>
-        </div>
 
     </div>
   </section>
